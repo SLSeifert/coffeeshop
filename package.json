@@ -4,9 +4,9 @@
   "description": "A fictional coffeeshop website.",
   "source": "index.html",
   "scripts": {
-    "start": "parcel --open",
-    "build": "parcel build"
- },
+    "start": "parcel serve index.html --open",
+    "build": "parcel build index.html"
+  },
   "keywords": [],
   "author": "Stephen Seifert",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "parcel": "^2.15.4"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "bootstrap": "^5.2.3"
   }
 }

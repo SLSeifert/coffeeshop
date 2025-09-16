@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HeBrew's Coffee</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/solid.css"
+    />
+
+    <!--Google Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--External Style Sheet-->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main>
+
+     <!-- Navigation Bar-->
+      <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container mt-3">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fa-solid fa-mug-saucer fa-2xl me-2"></i>
+                <span>HeBrew's Coffee</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item"><a class="nav-link active" href="#"><i class="fa-solid fa-house fa-lg"></i> Home</a></li>
+                    <li class="navbar-item"><a class="nav-link" href="menu.html"><i class="fa-solid fa-list fa-lg"></i> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-info fa-lg"></i> About Us</a></li>
+                    <li class="navbar-item"></li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section-->
+      <section class="hero container">
+        <div class="row align-items-center">
+        <div class="col-md-6 p-5 text-light">
+            <div class="row text-center">
+                <h1 class="col text-center text-lg-start">Heaven in a Cup</h1>
+                <p class="mt-3"><q>But they that wait upon the Lord shall renew their strength...</q><footer class="text-end">Isaiah 40:31 </footer></p>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#brewModal">Join the Brew-Crew</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="brewModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Brew-Crew Sign up</h3>
+                <button type="button" class="close" data-bs-dismiss="modal">
+                &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                <form>
+                    <div class="row">
+                        <div class="mb-3 col-12">
+                        <label class="sr-only" for="enterName">Name</label>
+                        <input
+                        type="name"
+                        class="form-control form-control-sm"
+                        id="enterName"
+                        placeholder="Enter Name"
+                        />
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label class="sr-only" for="enterEmail"
+                        >Email address</label
+                        >
+                        <input
+                        type="email"
+                        class="form-control form-control-sm"
+                        id="enterEmail"
+                        placeholder="Enter email"
+                        />
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col">
+                        <button
+                        type="button"
+                        class="btn btn-light border"
+                        data-bs-dismiss="modal"
+                        >
+                        Close
+                        </button>
+                        <button type="button" class="btn btn-secondary">
+                        Join
+                        </button>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="img/coffee.jpg" alt="coffee mug with steam" class="img-fluid">
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center mb-0"><p>&copy; 2025 HeBrew's Coffee. All rights reserved.</p></footer>
+    <!-- Bootstrap JavaScript plugins -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
